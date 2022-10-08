@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif, Helvetica, sans-serif;
 }
 
 :root{
@@ -19,14 +19,13 @@ body{
 
 .nav{
     width: 100%;
-    /* height: 90px; */
     display: flex;
     justify-content: space-between;
     padding: 10px 10px;
 }
 
 .nav__left img{
-    padding: 20px;
+    padding: 15px;
     background: var(--blue);
 }
 
@@ -46,8 +45,8 @@ body{
 }
 
 .nav__center ul li:hover{
-    border-top: 1px solid var(--blue);
-    border-bottom: 1px solid var(--blue);
+    border-top: 0px solid var(--blue);
+    border-bottom: 0px solid var(--blue);
     border-bottom-width: 1px;
     color: var(--blue);
 }
@@ -67,4 +66,90 @@ body{
 
 .nav__right h4:hover{
     border: 2px solid var(--gray);
+}
+
+/* MAIN */
+
+.main{
+    position: relative;
+    top: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.main__left img{
+    height: 500px;
+    margin-left: 80px;
+}
+
+.main__right--up h1{
+    font-size: 55px;
+}
+
+.main__right--up p{
+    font-size: 25px;
+    font-weight: 600;
+    padding: 15px 0;
+    color: var(--gray);
+}
+
+.main__right--middle-up{
+    position: relative;
+    top: 2rem;
+    right: 1rem;
+    display: flex;
+}
+
+.main__right--middle-up h5{
+    font-size: 21px;
+    font-weight: 300;
+    margin-right: 15px;
+    padding: 5px 18px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.main__right--middle-up h5:hover{
+    border-top-right-radius: 10px;
+    color: var(--white);
+    background: var(--blue);
+}
+
+
+.main__right--middle-2{
+    position: relative;
+    top: 4rem;
+    display: flex;
+}
+
+.main__right--middle-2 ul{
+    display: flex;
+    gap: 45px;
+    text-align: center;
+}
+
+.main__right--middle-2 ul li{
+    list-style: none;
+    /* margin-right: 15px; */
+}
+
+.main__right--middle-2 h5{
+    padding-top: 10px;
+    color: var(--gray);
+}
+
+
+.main__right--middle-2 h6{
+    font-size: 16px;
+    margin-left: 2rem;
+    text-decoration: none;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.main__right--middle-2 h6:hover{
+    padding: 5px 20px;
+    text-align: center;
+    color: var(--white);
+    background: var(--blue);
 }
