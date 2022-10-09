@@ -26,6 +26,7 @@ body{
 
 .nav__left img{
     padding: 15px;
+    border-radius: 5px;
     background: var(--blue);
 }
 
@@ -57,16 +58,16 @@ body{
 
 .nav__right h4{
     font-weight: 700;
-    font-size: 20px;
-    margin-top: 46px;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 26px;
     margin-right: 15px;
-    padding: 8px 10px;
+    /* padding: 4px 10px 2px; */
+    padding: 10px 15px;
     cursor: pointer;
-}
-
-.nav__right h4:hover{
     border: 2px solid var(--gray);
 }
+
 
 /* MAIN */
 
@@ -152,4 +153,58 @@ body{
     text-align: center;
     color: var(--white);
     background: var(--blue);
+}
+
+/* FOOTER */
+
+.footer{
+    width: 600px;
+    position: absolute;
+    right: 80px;
+    display: flex;
+}
+
+.footer__left,
+.footer__center{
+    width: 200px;
+    padding: 0 10px;
+}
+
+.footer__left h5,
+.footer__center h5{
+    margin: 10px 0;
+}
+
+.footer__left{
+    color: var(--white);
+    background: var(--yellow);
+}
+
+.footer__center{
+    color: var(--white);
+    background: var(--orange);
+}
+
+.footer__right{
+    width: 347px;
+    text-align: end;
+    padding-right: 10px;
+    color: var(--white);
+    background: var(--blue);
+}
+
+.footer__right img{
+    margin-left: 60px;
+}
+
+.footer__right h5, p{
+    padding: 6px 0;
+}
+
+.footer__right h5{
+    font-size: 16px;
+}
+
+.footer__right p{
+    font-size: 13px;
 }
