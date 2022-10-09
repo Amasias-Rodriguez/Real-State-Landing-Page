@@ -1,210 +1,86 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif, Helvetica, sans-serif;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="realstate.css">
+    <title>Real State Landing Page</title>
+</head>
+<body>
 
-:root{
-    --blue: #251BFF;
-    --white: #FFFFFF;
-    --gray: #c0bebe;
-    --orange: #FF5739;
-    --yellow: #FFD301;
-}
+    <!-- HEADER  -->
+    <header>
+        <nav class="nav">
+            <div class="nav__left">
+                <img src="/images/logo.png" alt="logo">
+            </div>
+            <div class="nav__center">
+                <ul>
+                    <li>Home</li>
+                    <li>Properties</li>
+                    <li>Members</li>
+                    <li>Pages</li>
+                    <li>Blogs</li>
+                </ul>
+            </div>
+            <div class="nav__right">
+                <h4>Log In</h4>
+            </div>
+        </nav>
+    </header>
 
-body{
-    background: var(--white);
-}
+    <!-- MAIN -->
+    <main class="main">
+        <div class="main__left">
+            <img src="/images/saturn.png" alt="houses">
+        </div>
+        <div class="main__right">
+            <div class="main__right--up">
+                <h1>Choose Your Best <br> Happy Land</h1>
+                <p>Real Estate & Properties Fro Sale or Rent <br> in 12 Countries</p>
+            </div>
+            <div class="main__right--middle">
+                <div class="main__right--middle-up">
+                    <h5>Buy</h5>
+                    <h5>Rent</h5>
+                </div>
+            </div>
+            <div class="main__right--middle-2">
+                <ul>
+                    <li>
+                        <h4>Property Type</h4>
+                        <h5>Show All</h5>
+                    </li>
+                    <li>
+                        <h4>Bedroom</h4>
+                        <h5>Any Beds</h5>
+                    </li>
+                    <li>
+                        <h4>Price Range</h4>
+                        <h5>Any Price</h5>
+                    </li>
+                </ul>
+                <h6>Search</h6>
+            </div>
+        </div>
+    </main>
 
-.nav{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 10px;
-}
-
-.nav__left img{
-    padding: 15px;
-    border-radius: 5px;
-    background: var(--blue);
-}
-
-.nav__center ul{
-    display: flex;
-}
-
-.nav__center ul li{
-    font-weight: 600;
-    font-size: 20px;
-    margin-top: 46px;
-    list-style: none;
-    margin-right: 15px;
-    transition: 0.6s;
-    cursor: pointer;
-
-}
-
-.nav__center ul li:hover{
-    border-top: 0px solid var(--blue);
-    border-bottom: 0px solid var(--blue);
-    border-bottom-width: 1px;
-    color: var(--blue);
-}
-
-.nav__right{
-    display: flex;
-}
-
-.nav__right h4{
-    font-weight: 700;
-    font-size: 18px;
-    text-align: center;
-    margin-top: 26px;
-    margin-right: 15px;
-    /* padding: 4px 10px 2px; */
-    padding: 10px 15px;
-    cursor: pointer;
-    border: 2px solid var(--gray);
-}
-
-
-/* MAIN */
-
-.main{
-    position: relative;
-    top: 5rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.main__left img{
-    height: 500px;
-    margin-left: 80px;
-}
-
-.main__right--up h1{
-    font-size: 55px;
-}
-
-.main__right--up p{
-    font-size: 25px;
-    font-weight: 600;
-    padding: 15px 0;
-    color: var(--gray);
-}
-
-.main__right--middle-up{
-    position: relative;
-    top: 2rem;
-    right: 1rem;
-    display: flex;
-}
-
-.main__right--middle-up h5{
-    font-size: 21px;
-    font-weight: 300;
-    margin-right: 15px;
-    padding: 5px 18px;
-    transition: 0.5s;
-    cursor: pointer;
-}
-
-.main__right--middle-up h5:hover{
-    border-top-right-radius: 10px;
-    color: var(--white);
-    background: var(--blue);
-}
-
-
-.main__right--middle-2{
-    position: relative;
-    top: 4rem;
-    display: flex;
-}
-
-.main__right--middle-2 ul{
-    display: flex;
-    gap: 45px;
-    text-align: center;
-}
-
-.main__right--middle-2 ul li{
-    list-style: none;
-    /* margin-right: 15px; */
-}
-
-.main__right--middle-2 h5{
-    padding-top: 10px;
-    color: var(--gray);
-}
-
-
-.main__right--middle-2 h6{
-    font-size: 16px;
-    margin-left: 2rem;
-    text-decoration: none;
-    transition: 1s;
-    cursor: pointer;
-}
-
-.main__right--middle-2 h6:hover{
-    padding: 5px 20px;
-    text-align: center;
-    color: var(--white);
-    background: var(--blue);
-}
-
-/* FOOTER */
-
-.footer{
-    width: 600px;
-    position: absolute;
-    right: 80px;
-    display: flex;
-}
-
-.footer__left,
-.footer__center{
-    width: 200px;
-    padding: 0 10px;
-}
-
-.footer__left h5,
-.footer__center h5{
-    margin: 10px 0;
-}
-
-.footer__left{
-    color: var(--white);
-    background: var(--yellow);
-}
-
-.footer__center{
-    color: var(--white);
-    background: var(--orange);
-}
-
-.footer__right{
-    width: 347px;
-    text-align: end;
-    padding-right: 10px;
-    color: var(--white);
-    background: var(--blue);
-}
-
-.footer__right img{
-    margin-left: 60px;
-}
-
-.footer__right h5, p{
-    padding: 6px 0;
-}
-
-.footer__right h5{
-    font-size: 16px;
-}
-
-.footer__right p{
-    font-size: 13px;
-}
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__left">
+            <h5>Buy a House</h5>
+        </div>
+        <div class="footer__center">
+            <h5>Rent an Appartment</h5>
+        </div>
+        <div class="footer__right">
+            <img src="/images/building.png" alt="buildings">
+            <h5>See neighborhoods</h5>
+            <p>Wit more neighborhood insights <br> than any other real state website</p>
+        </div>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
